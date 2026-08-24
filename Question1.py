@@ -64,4 +64,4 @@ for i in range(1, 6):
 A = np.array([[10,1],[2,10]], dtype=float)
 b = np.array([11,12], dtype=float)
 exact_x, exact_y = np.linalg.solve(A, b)
-print(f"exact x = {exact_x:.0f}, y = {exact_y:.0f}")
+print(f"exact x = {exact_x:.4f}, y = {exact_y:.4f}")
