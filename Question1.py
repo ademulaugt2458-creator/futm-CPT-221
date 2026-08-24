@@ -1,4 +1,4 @@
-six_applications_of_numerical_computation = '''
+Applications_of_numerical_computation = '''
 The following are six applications of numerical computation:
 1. Machine learning and AI
 2. Scientific simulations and modeling
@@ -9,7 +9,7 @@ The following are six applications of numerical computation:
 '''
 
 print('\n1a:', end=' ')
-print(six_applications_of_numerical_computation, '\n')
+print(Applications_of_numerical_computation, '\n')
 
 print('1b: Solving the following system of equations using Substitution method:\n')
 
@@ -53,14 +53,15 @@ print("Starting iteration with initial guess x=0, y=0 and performing 5 iteration
 
 x, y = 0.0, 0.0   # initial guess
 print(f"{'iter':<5}{'x':<12}{'y':<12}")
-print(f"{0:<5}{x:<12.6f}{y:<12.6f}")
+print(f"{0:<5}{x:<12.4f}{y:<12.4f}")
 
 for i in range(1, 6):
     x_new = (11 - y) / 10
     y_new = (12 - 2*x) / 10
     x, y = x_new, y_new
-    print(f"{i:<5}{x:<12.6f}{y:<12.6f}")
+    print(f"{i:<5}{x:<12.4f}{y:<12.4f}")
 
 A = np.array([[10,1],[2,10]], dtype=float)
 b = np.array([11,12], dtype=float)
-print("exact [x,y] =", np.linalg.solve(A, b))
+exact_x, exact_y = np.linalg.solve(A, b)
+print(f"exact x = {exact_x:.0f}, y = {exact_y:.0f}")
