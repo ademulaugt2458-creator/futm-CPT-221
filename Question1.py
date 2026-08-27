@@ -58,15 +58,15 @@ print('''
 print("Starting iteration with initial guess x=0, y=0 and performing 5 iterations:\n")
 x, y = 0.0, 0.0
 print(f"{'iter':<5}{'x':<12}{'y':<12}")
-print(f"{0:<5}{x:<12.4f}{y:<12.4f}")
+print(f"{0:<5}{x:<12.3f}{y:<12.3f}")
 
 for i in range(1, 6):
     x_new = (11 - y) / 10
     y_new = (12 - 2*x) / 10
     x, y = x_new, y_new
-    print(f"{i:<5}{x:<12.4f}{y:<12.4f}")
+    print(f"{i:<5}{x:<12.3f}{y:<12.3f}")
 
 A = np.array([[10, 1], [2, 10]], dtype=float)
 b = np.array([11, 12], dtype=float)
 exact_x, exact_y = np.linalg.solve(A, b)
-print(f"exact x = {exact_x:.4f}, y = {exact_y:.4f}")
+print(f"exact x = {exact_x:.3f}, y = {exact_y:.3f}")
