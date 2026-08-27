@@ -40,7 +40,7 @@ next_guess = sp.lambdify(x_n, newton_step)
 # Run the iterations
 guess = 2.0   # x0 = 2, as given in the question
 print(f"\nIteration 0: x = {guess}")
-for i in range(1, 6):
+for i in range(1, 4):
     guess = next_guess(guess)
     print(f"Iteration {i}: x = {guess:.10f}")
 
