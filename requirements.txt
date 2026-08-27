@@ -1,6 +1,4 @@
-Have Python installed on a PC
-Install an IDE (Visual Studio, Vscode, e.t.c)
-pip install scipy
-pip install numpy
-pip install Fraction 
-pip install sympy
+scipy
+numpy
+fraction 
+sympy
