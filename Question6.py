@@ -1,6 +1,6 @@
 import sympy as sp
 
-print('6a: \n')
+print('6a:')
 print(
     "Ordinary Differential Equations(ODEs): an equation relating a function of one "
     "independent variable to its derivatives(e.g., dy/dx=f(x, y)). 'Ordinary' "
@@ -17,6 +17,13 @@ print(
     "\n Systems of nonlinear ODEs: multiple coupled nonlinear ODEs solved simultaneously"
     "(e.g., predator-prey models, chaotic systems like the Lorenz equations),"
     "where each equation's derivative depends on multiple unknown functions"
+)
+
+print(
+    "\nImportance of Runge-Kutta Methods \n"
+    "Numerical Approximation: Runge-Kutta methods compute step-by-step approximate solutions when formulas fail. \n"
+    "Higher Accuracy: Instead of using just one slope like Euler's method, the popular fourth-order version (RK4) samples four slope estimates per step to mirror curved trajectories.\n"
+    "Handling Nonlinearity: They solve complex nonlinear systems smoothly without needing higher-order analytical derivatives\n"
 )
 
 
