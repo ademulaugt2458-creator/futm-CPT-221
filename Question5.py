@@ -10,7 +10,7 @@ print('''
 ''')
 x, y, z = 0.0, 0.0, 0.0
 print("initial guess x(0)=0, y(0)=0, z(0)=0 ")
-print("5 iterations")
+
 print(f"{0:<5}{x:<12.4f}{y:<12.4f}{z:<12.4f}")
 
 
