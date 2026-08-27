@@ -6,6 +6,13 @@ echo ============================================
 set URL=https://www.python.org/ftp/python/3.14.7/python-3.14.7-amd64.exe
 set DEST=%USERPROFILE%\Downloads\python-3.14.7-amd64.exe
 
+if exist "%DEST%" (
+    echo Python installer already exists at: %DEST%
+    echo Skipping download...
+    pause
+    exit /b 0
+)
+
 echo Downloading to: %DEST%
 curl -L -o "%DEST%" %URL%
 
