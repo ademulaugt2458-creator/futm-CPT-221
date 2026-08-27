@@ -32,7 +32,7 @@ x = 0.0
 print(f"{'iter':<5}{'x_n':<15}")
 print(f"{0:<5}{x:<15.4f}")
 
-for i in range(1, 5):
+for i in range(1, 7):
     x = g(x)
     print(f"{i:<5}{x:<15.4f}")
 
