@@ -2,15 +2,18 @@ import sympy as sp
 
 
 print("4a: Question: Define Numerical Computation and explain its importance in computer science")
-print('''Answer: Numerical computation is the process of using algorithms and numerical methods to solve mathematical problems 
-that are typically continuous in nature. It involves approximating solutions to equations, performing numerical integration and differentiation, and solving systems of equations, among other tasks. 
-
-Importance in computer science: Numerical computation is crucial in computer science as it enables the simulation 
-and modeling of complex systems, optimization problems, and data analysis. 
-It allows for the efficient handling of large datasets, solving real-world problems in engineering, physics, finance, 
-and other fields. Additionally, numerical methods are foundational for developing algorithms
-that can be implemented on computers to provide accurate and reliable results.''')
-
+print(
+    "Answer: Numerical computation is the process of using algorithms and numerical methods to solve"
+    " mathematical problems that are typically continuous in nature. It involves approximating solutions"
+    " to equations, performing numerical integration and differentiation, and solving systems of equations, among other tasks.\n"
+)
+print(
+    "Importance in computer science: Numerical computation is crucial in computer science as it enables the simulation "
+    "and modeling of complex systems, optimization problems, and data analysis. "
+    "It allows for the efficient handling of large datasets, solving real-world problems in engineering, physics, finance, "
+    "and other fields. Additionally, numerical methods are foundational for developing algorithms"
+    "that can be implemented on computers to provide accurate and reliable results."
+)
 
 print("\n\n4b:")
 print("Newton-Raphson method for the function f(x) = x^2 - 5, starting with x0 = 2.\n")

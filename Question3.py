@@ -23,15 +23,16 @@ print(Need_for_interpolation, '\n')
 print('3b: Solving the following system of equations using fixed-point iteration:\n')
 
 
-
 def g(x):
     return math.exp(-x)
 
-x = 0.0   # initial guess
+
+print("initial guess: x(0) = 0.0")
+x = 0.0
 print(f"{'iter':<5}{'x_n':<15}")
 print(f"{0:<5}{x:<15.4f}")
 
-for i in range(1, 5):   # 4 iterations
+for i in range(1, 5):
     x = g(x)
     print(f"{i:<5}{x:<15.4f}")
 
@@ -39,12 +40,11 @@ print(f"Approximate root after 4 iterations: x = {x:.4f}")
 print(f"Check: e^(-x) = {math.exp(-x):.4f}")
 
 
-
-print('\n3c: Solving the following system of equations using LU decomposition:\n')
-
-
-# 2x + 3y = 8
-# 4x +  y = 10
+print('\n3c: Solving the following system of equations using LU decomposition:')
+print('''
+2x + 3y = 8
+4x +  y = 10
+''')
 A = np.array([[2, 3],
               [4, 1]], dtype=float)
 b = np.array([8, 10], dtype=float)
@@ -68,4 +68,3 @@ x, y = sol[0], sol[1]   # unpack into separate variables
 print("\nFinal Answer:")
 print(f"x = {x}")
 print(f"y = {y}")
-
