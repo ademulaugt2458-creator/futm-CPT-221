@@ -36,7 +36,7 @@ for i in range(1, 7):
     x = g(x)
     print(f"{i:<5}{x:<15.4f}")
 
-print(f"Approximate root after 4 iterations: x = {x:.4f}")
+print(f"Approximate root after 6 iterations: x = {x:.4f}")
 print(f"Check: e^(-x) = {math.exp(-x):.4f}")
 
 
